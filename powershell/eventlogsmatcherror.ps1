@@ -1,0 +1,1 @@
+Get-EventLog Application | Where-Object {$_.Message -match 'Windows detected your registry file is still in use by other applications or services.'} | Select Index,EntryType,EventID,Message,TimeGenerated,TimeWritten
