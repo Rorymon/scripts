@@ -21,7 +21,7 @@ $CloseFinish = $Bounds.Bottom
 
 # Code to create a base64 string from an image file
 <#
-$File = "\\slhnaz.org\ctx\Software\Tools\Customizations\Toast\HHToastLogo.PNG"
+$File = "<pathtoimage>"
 $Image = [System.Drawing.Image]::FromFile($File)
 $MemoryStream = New-Object System.IO.MemoryStream
 $Image.Save($MemoryStream, $Image.RawFormat)
@@ -140,7 +140,7 @@ $Window.Add_MouseEnter({
 # Window mouse up (simulate click)
 $Window.Add_MouseUp({
     # Open a web page, stop the dispatcher timer and close the notification
-    Start-Process "https://pulsenews.honorhealth.com/performance-reviews-update"
+    Start-Process "https://rorymon.com"
     $UI.DispatcherTimer.Stop()
     $This.Close()
 })
